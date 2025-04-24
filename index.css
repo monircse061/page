@@ -7,16 +7,19 @@
  }
 
  .u-section-1 .u-image-1 {
-     width: 386px;
-     height: 386px;
-     background-image: url("images/monir_cse_sm.jpg");
-     background-position: 50% 50%;
-     transition-duration: 1s;
-     text-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
-     box-shadow: 2px 2px 8px 0px rgba(128, 128, 128, 1);
-     transform: translateX(0px) translateY(0px) scale(1) rotate(0deg);
-     margin: 67px auto 0 16px;
- }
+    width: 386px;
+    height: 386px;
+    background-image: url("images/monir_formal_pic.jpg");
+    background-position: center; /* Centers the image */
+    background-size: contain; /* Ensures the image fits without being cropped or zoomed */
+    background-repeat: no-repeat; /* Prevents tiling if the image is smaller */
+    transition-duration: 1s;
+    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+    box-shadow: 2px 2px 8px 0px rgba(128, 128, 128, 1);
+    transform: translateX(0px) translateY(0px) scale(1) rotate(0deg);
+    margin: 77px auto 0 16px;
+}
+
 
  .u-section-1 .u-text-1 {
      transition-duration: 0.5s;
