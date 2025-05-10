@@ -134,13 +134,14 @@
                                 
                                   <h4>Key Features and Technical Implementation:</h4>
                                   <ul>
-                                    <li><strong>Retrieval-Augmented Generation (RAG):</strong> Combines vector-based retrieval with generative LLM responses using <strong>LangChain</strong>.</li>
-                                    <li><strong>Semantic Search:</strong> Uses NLP and vector search over 4 million product records to retrieve the top 5 most relevant items.</li>
-                                    <li><strong>Conversational Chatbot:</strong> 
+                                    <li><strong>Retrieval-Augmented Generation (RAG):</strong> Implements RAG pipeline using <strong>LangChain</strong> to combine vector-based retrieval with generative LLM responses, ensuring relevant and personalized product recommendations.</li>
+                                    <li><strong>Natural Language Processing (NLP) and Vector Search:</strong> Utilizes semantic similarity search over a dataset of over 4 million product records to retrieve the top 5 most relevant products based on user input.</li>
+                                    <li><strong>Conversational AI Chatbot Design:</strong> 
                                       <ul>
-                                        <li>Supports multi-turn dialogue and remembers user input.</li>
-                                        <li>Handles English and Japanese input; product data remains in Korean.</li>
-                                        <li>Displays product recommendations with at least two image URLs.</li>
+                                        <li>Supports conversation-based interaction using Open-Source LLMs (LLaMA) </li>
+                                        <li>Supports multi-turn dialogue and remembers user preferences during a session.</li>
+                                        <li>Handles English, Korean, and Japanese input.</li>
+                                        <li>Recommends products with at least two product images included in the chatbot response via image URLs.</li>
                                       </ul>
                                     </li>
                                     <li><strong>Adaptive Recommendations:</strong> 
