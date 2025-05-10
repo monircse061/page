@@ -124,9 +124,45 @@
                               
                                 <p class="u-align-left-xs u-text u-text-2"> <h3 class="u-text u-text-1">Development of an on-Premise AI Product Recommendation Model Using Open-Source LLM</h3>
                                 </p>
-                                <p class="u-align-left-xs u-text u-text-2">I am developing an on-premise AI-powered product recommendation system tailored for independent online store operators. While large marketplaces benefit from advanced AI models, smaller retailers often lack such capabilities.
-
-                                    This project addresses that gap by building a system that analyzes customer input sentences using Natural Language Processing (NLP) and vector search to recommend the top 5 semantically relevant products. Designed for local deployment, the solution ensures data privacy and full control over the recommendation workflow. </p>
+                                   <p>
+                                    As part of my MSc AI project in collaboration with Narosu Co., Ltd., I am developing an <strong>on-premise AI-powered product recommendation system</strong> tailored for independent online store operators. While large marketplaces benefit from advanced AI models, smaller vendors often lack such capabilities.
+                                  </p>
+                                
+                                  <p>
+                                    This project bridges that gap by delivering a <strong>localized, privacy-preserving, conversational AI chatbot</strong> that recommends products based on semantic understanding of customer input.
+                                  </p>
+                                
+                                  <h4>Key Features and Technical Implementation:</h4>
+                                  <ul>
+                                    <li><strong>Retrieval-Augmented Generation (RAG):</strong> Combines vector-based retrieval with generative LLM responses using <strong>LangChain</strong>.</li>
+                                    <li><strong>Semantic Search:</strong> Uses NLP and vector search over 4 million product records to retrieve the top 5 most relevant items.</li>
+                                    <li><strong>Conversational Chatbot:</strong> 
+                                      <ul>
+                                        <li>Supports multi-turn dialogue and remembers user input.</li>
+                                        <li>Handles English and Japanese input; product data remains in Korean.</li>
+                                        <li>Displays product recommendations with at least two image URLs.</li>
+                                      </ul>
+                                    </li>
+                                    <li><strong>Adaptive Recommendations:</strong> 
+                                      <ul>
+                                        <li>If initial suggestions are rejected, it proposes alternatives using unmentioned keywords.</li>
+                                        <li>Asks follow-up questions like preferred color, brand, or options to refine results.</li>
+                                      </ul>
+                                    </li>
+                                    <li><strong>Multi-source Integration:</strong> Combines data from <strong>OwnerClan</strong> (3 products) and <strong>Naver</strong> (2 products via API or web crawling).</li>
+                                    <li><strong>On-Premise Deployment:</strong> Ensures full control over recommendation logic and data privacy without relying on cloud infrastructure.</li>
+                                    <li><strong>Performance Optimization:</strong> Chatbot responses are optimized to return within <strong>5–10 seconds</strong>.</li>
+                                  </ul>
+                                
+                                  <h4>Technologies Used:</h4>
+                                  <ul>
+                                    <li><strong>Embedding Model:</strong> <code>text-embedding-ada-002</code> (OpenAI)</li>
+                                    <li><strong>Vector Database:</strong> <code>Qdrant</code></li>
+                                    <li><strong>LLM Reasoning:</strong> <code>LLaMA 3.1 8B Instant</code></li>
+                                    <li><strong>Framework:</strong> <code>LangChain</code> for RAG pipeline</li>
+                                    <li><strong>User Interface:</strong> <code>Gradio</code></li>
+                                    <li><strong>Backend:</strong> <code>Gradio</code> + <code>FastAPI</code></li>
+                                  </ul>
                             </div>
                         </div>
                         <div class="u-align-left u-container-style u-layout-cell u-right-cell u-size-17-lg u-size-17-md u-size-17-sm u-size-17-xl u-size-60-xs u-layout-cell-2">
